@@ -8,7 +8,6 @@ import Image from 'next/image';
 import styles from './index.module.css';
 
 const Dashboard = () => {
-
   const session = useSession();
   const router = useRouter();
 
@@ -21,9 +20,12 @@ const Dashboard = () => {
   if (session.status == 'loading') {
     return <p>Loading...</p>;
   }
-  if (session.status == 'unauthenticated') {
-    router?.push('/dashboard/login');
-  }
+
+  useEffect(() => {
+    if (session.status == 'unauthenticated') {
+      router?.push('/dashboard/register');
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
