@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import styles from './button.module.css';
+import styles from './btn.module.css';
 
-const Button = ({ text, url }) => {
+const Btn = ({ text, url }) => {
   return (
     <Link href={url}>
       <button className={styles.container}>{text}</button>
@@ -9,4 +9,4 @@ const Button = ({ text, url }) => {
   );
 };
 
-export default Button;
+export default Btn;

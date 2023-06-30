@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from '@/components/Button/Button';
+import Btn from '@/components/btn/Btn';
 import styles from './index.module.css';
 
 export const metadata = {
@@ -23,7 +23,7 @@ const Contact = () => {
             placeholder='message'
             cols='30'
             rows='10'></textarea>
-          <Button url='#' text='Send' />
+          <Btn url='#' text='Send' />
         </form>
       </div>
     </div>

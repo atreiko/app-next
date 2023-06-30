@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from '@/components/button/Button';
+import Btn from '@/components/btn/Btn';
 import styles from './index.module.css';
 
 const About = () => {
@@ -51,7 +51,7 @@ const About = () => {
             <br />
             <br /> - Mobile Apps
           </p>
-          <Button url='/contact' text='Contact' />
+          <Btn url='/contact' text='Contact' />
         </div>
       </div>
     </div>
